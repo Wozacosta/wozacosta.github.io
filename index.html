@@ -32,7 +32,7 @@
               <div class="summary">
                 <a>Samy</a> is currently looking for an internship.
                 <div class="date" id="date">
-                  <time class="timeago" datetime="2016-11-23T09:24:17Z">3 days ago</time>
+                  <time class="timeago" datetime="2016-11-23T09:24:17Z"></time>
                 </div>
               </div>
             </div>
@@ -40,8 +40,8 @@
         </div>
     </div>
     <div class="ui three column doubling stackable grid container" id ="main_content">
-      <div class="column">
-         <h3>Software engineering</h3>
+      <div class="column ui segment" id="first_col">
+         <h3><i class="code large icon"></i>Software development</h3>
          <div class="ui list">
                <div class="item">
                 <i class="external icon"></i>
@@ -80,60 +80,60 @@
               </div>
           </div>
 
-        <h3><i class="code icon"></i>Dev technologies</h3>
+        <hr>
             <ul>
                 <li>C</li>
                 <li>Java</li>
                 <!--<li><div class="ui active inline small loader"></div> Studying Android App Development</li>-->
             </ul>
       </div>
-      <div class="column">
-        <h3>Web Development</h3>
+      <div class="column ui segment">
+        <h3><i class="at large icon"></i>Web Development</h3>
             <div class="ui list">
                <div class="item">
                 <i class="external icon"></i>
                 <div class="content">
                   <a class="header" href="https://protected-earth-44792.herokuapp.com"  target="_blank">YelpCamp</a>
-                  <div class="description">Yelp-like website, share and review campgrounds - bootstrap, mongo, express, node, passportjs</div>
+                  <div class="description">Yelp-like website, share and review campgrounds  <span class="tech"> - bootstrap, mongo, express, node, passportjs</span></div>
                 </div>
               </div>
               <div class="item">
                 <i class="external icon"></i>
                 <div class="content">
                   <a class="header" href="https://wozacosta.github.io/patatapMobile/"  target="_blank">patatapMobile</a>
-                  <div class="description">Interactive beat maker - javascript, paperJs and howlerJs.</div>
+                  <div class="description">Interactive beat maker  <span class="tech"> - javascript, paperJs and howlerJs.</span></div>
                 </div>
               </div>
               <div class="item">
                 <i class="external icon"></i>
                 <div class="content">
                   <a class="header" href="https://wozacosta.github.io/colorGuessr/"  target="_blank">colorGuessr</a>
-                  <div class="description">RGB-color guessing game - javascript</div>
+                  <div class="description">RGB-color guessing game  <span class="tech"> - javascript</span></div>
                 </div>
               </div>
               <div class="item">
                 <i class="external icon"></i>
                 <div class="content">
                   <a class="header" href="https://wozacosta.github.io/todoList/"  target="_blank">todoList</a>
-                  <div class="description">Clean todo-list - javascript, node, express, mongo</div>
+                  <div class="description">Clean todo-list  <span class="tech"> - javascript, node, express, mongo</span></div>
                 </div>
               </div>
           </div>
             
         
-        <h3><i class="at icon"></i>Web technologies</h3>
+        <hr>
             <ul>
-                <li>HTML5 / CSS3</li>
+                <li>Mongo / Express / React / Node</li>
                 <li>JavaScript / jQuery</li>
                 <li>Version Control ( GIT )</li>
                 <li>Bootstrap / Semantic-UI</li>
                 <li>Responsive Layout and Design</li>
-                <li>Mongo / Express / React / Node</li>
+                <li>HTML5 / CSS3</li>
                 <!--<li><div class="ui active inline small loader"></div> Studying ajax and react</li>-->
             </ul>
       </div>
       
-      <div class="column">
+      <div class="column ui segment">
         
         <h3>About</h3>
             <div class="ui middle aligned divided list">
@@ -183,7 +183,11 @@
         <div class="ui middle aligned divided list">
             <div class="item">
                 <div class="content">
-                  <li><i class="envelope icon"></i>rabah.m.samy@gmail.com</li>
+                  <li><i class="envelope icon"></i>
+                  <div class="ui input">
+                    <input type="text" id="email" value="rabah.m.samy@gmail.com" />
+                  </div>
+                    <button class="ui primary button" data-copytarget="#email">copy</button></li>
                 </div>
              </div>
              <div class="item">
