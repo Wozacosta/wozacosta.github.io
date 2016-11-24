@@ -5,38 +5,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>wozacosta</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/semantic.css" />
+    <link rel="stylesheet" href="main.css" type="text/css" />
+    <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/semantic.js"></script>
 </head>
 <body>
-<div class="ui container">
-    <h1>srabah-m</h1>
+<div class="ui container" id="main">
     
-    <p>currently studying @42</p>
-    <div class="ui three column doubling stackable grid container">
+    <div class="ui image">
+        <img src="banner6.png">
+    </div>
+    <div class="ui message">
+      <div class="header">
+        Currently looking for an internship
+      </div>
+      <p></p>
+    </div>
+    <div class="ui three column doubling stackable grid container" id ="main_content">
       <div class="column">
          <h3>Software engineering</h3>
-            <ul>
-                <li>Wolf3d</li>
-                <li>Lem_in</li>
-                <li>42sh</li>
-                <li>ft_select</li>
-                <li>france-ioi</li>
-            </ul>
+         <div class="ui list">
+               <div class="item">
+                <i class="external icon"></i>
+                <div class="content">
+                  <a class="header" href="https://protected-earth-44792.herokuapp.com"  target="_blank">Wolf3d</a>
+                  <div class="description">3d game using raycasting, using a custom lib based on X11, written in C.</div>
+                </div>
+              </div>
+              <div class="item">
+                <i class="external icon"></i>
+                <div class="content">
+                  <a class="header" href="https://wozacosta.github.io/patatapMobile/"  target="_blank">Lem_in</a>
+                  <div class="description">Shortest path algorithm project for École 42.</div>
+                </div>
+              </div>
+              <div class="item">
+                <i class="external icon"></i>
+                <div class="content">
+                  <a class="header" href="https://wozacosta.github.io/colorGuessr/"  target="_blank">42sh</a>
+                  <div class="description">UNIX Shell coded scratch</div>
+                </div>
+              </div>
+              <div class="item">
+                <i class="external icon"></i>
+                <div class="content">
+                  <a class="header" href="https://wozacosta.github.io/todoList/"  target="_blank">ft_select</a>
+                  <div class="description">User interface inside the terminal, makes use of termcaps.</div>
+                </div>
+              </div>
+              <div class="item">
+                <i class="external icon"></i>
+                <div class="content">
+                  <a class="header" href="http://www.france-ioi.org/user/perso.php?sLogin=wozacosta"  target="_blank">france-ioi</a>
+                  <div class="description">Programming challenges</div>
+                </div>
+              </div>
+          </div>
+
         <h3><i class="code icon"></i>Dev technologies</h3>
             <ul>
                 <li>C</li>
                 <li>Java</li>
-                <li>Android App Development</li>
+                <!--<li><div class="ui active inline small loader"></div> Studying Android App Development</li>-->
             </ul>
       </div>
       <div class="column">
         <h3>Web Development</h3>
-            <ul>
-                <li><a href="https://wozacosta.github.io/colorGuessr/">colorGuessr</a></li>
-                <li><a href="https://wozacosta.github.io/todoList/">todoList</a></li>
-                <li><a href="https://wozacosta.github.io/patatapMobile/">patatapMobile</a></li>
-                <li><a href="https://protected-earth-44792.herokuapp.com">YelpCamp</a></li>
-            </ul>
+            <div class="ui list">
+               <div class="item">
+                <i class="external icon"></i>
+                <div class="content">
+                  <a class="header" href="https://protected-earth-44792.herokuapp.com"  target="_blank">YelpCamp</a>
+                  <div class="description">Yelp-like website, share and review campgrounds - bootstrap, mongo, express, node, passportjs</div>
+                </div>
+              </div>
+              <div class="item">
+                <i class="external icon"></i>
+                <div class="content">
+                  <a class="header" href="https://wozacosta.github.io/patatapMobile/"  target="_blank">patatapMobile</a>
+                  <div class="description">Interactive beat maker - javascript, paperJs and howlerJs.</div>
+                </div>
+              </div>
+              <div class="item">
+                <i class="external icon"></i>
+                <div class="content">
+                  <a class="header" href="https://wozacosta.github.io/colorGuessr/"  target="_blank">colorGuessr</a>
+                  <div class="description">RGB-color guessing game - javascript</div>
+                </div>
+              </div>
+              <div class="item">
+                <i class="external icon"></i>
+                <div class="content">
+                  <a class="header" href="https://wozacosta.github.io/todoList/"  target="_blank">todoList</a>
+                  <div class="description">Clean todo-list - javascript, node, express, mongo</div>
+                </div>
+              </div>
+          </div>
+            
         
         <h3><i class="at icon"></i>Web technologies</h3>
             <ul>
@@ -45,13 +113,14 @@
                 <li>Version Control ( GIT )</li>
                 <li>Bootstrap / Semantic-UI</li>
                 <li>Responsive Layout and Design</li>
-                <li>AJAX</li>
                 <li>Mongo / Express / React / Node</li>
+                <!--<li><div class="ui active inline small loader"></div> Studying ajax and react</li>-->
             </ul>
       </div>
+      
       <div class="column">
-          
-        <h2>About</h2>
+        
+        <h3>About</h3>
             <div class="ui middle aligned divided list">
               <div class="item">
                 <div class="content">
@@ -70,7 +139,7 @@
               </div>
               <div class="item">
                 <div class="content">
-                  <li><i class="cn flag"></i><a href="http://www.memrise.com/user/Wozacosta/">Currently studying mandarin</a></li>
+                  <li><i class="cn flag"></i>Basic knowledge of mandarin [HSK1]</li>
                 </div>
               </div>
               <div class="item">
@@ -80,7 +149,7 @@
               </div>
               <div class="item">
                 <div class="content">
-                  <li><i class="home icon"></i>Residing in Paris</li>
+                  <li><i class="home icon"></i>Paris</li>
                 </div>
               </div>
               <div class="item">
@@ -88,18 +157,85 @@
                   <li><i class="linux icon"></i><i class="apple icon"></i><i class="windows icon"></i>OS agnostic</li>
                 </div>
               </div>
+              <div class="item">
+                <div class="content">
+                  <li><i class="bicycle icon"></i>Used to work part-time as a bike messenger</li>
+                </div>
+              </div>
             </div>
            
-        <h2>Contact me</h2>
+        <h3>Contact me</h3>
         <div class="ui middle aligned divided list">
             <div class="item">
                 <div class="content">
                   <li><i class="envelope icon"></i>rabah.m.samy@gmail.com</li>
                 </div>
              </div>
+             <div class="item">
+                <div class="content">
+                  <li><i class="github icon"></i><a href="https://github.com/Wozacosta/"target="_blank" >github</a></li>
+                </div>
+             </div>
+             <div class="item">
+                <div class="content">
+                  <li><i class="lastfm icon"></i><a href="http://www.last.fm/fr/user/Wozacosta"target="_blank" >lastfm</a></li>
+                </div>
+             </div>
+             <div class="item">
+                <div class="content">
+                  <li><i class="video icon"></i><a href="http://letterboxd.com/Wozacosta/"target="_blank" >letterboxd</a></li>
+                </div>
+             </div>
+            <div class="item">
+                <div class="content">
+                  <li><i class="book icon"></i><a href="https://www.goodreads.com/user/show/44336903-wozacos"target="_blank" >goodreads</a></li>
+                </div>
+             </div>
         </div>
       </div>
     </div>
+    <div class="ui raised very padded text container segment">
+        <h3 class="ui header">Currently studying</h3>
+        <ul class="list">
+        <li>
+          <a href="https://www.udemy.com/react-redux/"  target="_blank">Modern React with Redux <i class="external icon"></i></a> 
+          <div class="ui indicating progress" id="learning1">
+            <div class="bar"></div>
+            <!--<div class="label">ned</div>-->
+          </div>
+        </li>
+        <li>
+          <a href="https://www.udemy.com/understand-javascript/"  target="_blank">JavaScript: Understanding the Weird Parts <i class="external icon"></i></a>
+          <div class="ui indicating progress" id="learning2">
+            <div class="bar"></div>
+            <!--<div class="label">5% Earned</div>-->
+          </div>
+        </li>
+        <li>
+          <a href="https://www.udemy.com/android-marshmallow-java-app-development-course/"  target="_blank">Android App Development With Java <i class="external icon"></i></a>
+          <div class="ui indicating progress" id="learning3">
+            <div class="bar"></div>
+            <!--<div class="label">5% Earned</div>-->
+          </div>
+        </li>
+        <li>
+          <a href="https://www.amazon.com/Algorithms-4th-Robert-Sedgewick/dp/032157351X"  target="_blank">Algorithmics <i class="external icon"></i></a>
+          <div class="ui indicating  progress" id="learning4">
+            <div class="bar"></div>
+            <!--<div class="label">5% Earned</div>-->
+          </div>  
+        </li>
+        <li>
+          <a href="http://www.memrise.com/user/Wozacosta/"  target="_blank">Mandarin Chinese HSK3 <i class="external icon"></i></a>
+          <div class="ui indicating  progress" id="learning5">
+            <div class="bar"></div>
+            <!--<div class="label">5% Earned</div>-->
+          </div>  
+        </li>
+      </ul>
+      </div>
+
 </div>
+<script type="text/javascript" src="main.js"></script>
 </body>
 </html>
