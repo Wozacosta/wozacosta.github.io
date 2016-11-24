@@ -11,6 +11,7 @@
   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
   crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/semantic.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-timeago/1.5.3/jquery.timeago.min.js"></script>
 </head>
 <body>
 <div class="ui container" id="main">
@@ -20,9 +21,23 @@
     </div>
     <div class="ui message">
       <div class="header">
-        Currently looking for an internship
+        <p>Student @ <a href="https://en.wikipedia.org/wiki/42_(school)" target="_blank">l'école 42</a>
       </div>
-      <p></p>
+      <div class="ui feed">
+          <div class="event">
+            <div class="label">
+              <img src="myAvatar.png">
+            </div>
+            <div class="content">
+              <div class="summary">
+                <a>Samy</a> is currently looking for an internship.
+                <div class="date" id="date">
+                  <time class="timeago" datetime="2016-11-23T09:24:17Z">3 days ago</time>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
     </div>
     <div class="ui three column doubling stackable grid container" id ="main_content">
       <div class="column">

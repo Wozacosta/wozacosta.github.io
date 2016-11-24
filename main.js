@@ -19,3 +19,7 @@ $('#learning4').progress({
 $('#learning5').progress({
   percent: 75
 });
+
+jQuery(document).ready(function() {
+  jQuery("time.timeago").timeago();
+});
